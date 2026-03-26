@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/trim-dist-for-pages.mjs",
     "preview": "vite preview",
     "thumbs": "node scripts/generate-thumbs.mjs",
     "thumbs:alien": "node scripts/generate-thumbs.mjs --only=alien1"
